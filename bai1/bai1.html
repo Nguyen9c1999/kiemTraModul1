@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let arr = [5,7,3,4,6];
+
+  function findPoint(arr) {
+     let bienTam
+      for(let i = 0; i < arr.length - 1; i++){
+          for(let j = i + 1; j < arr.length; j++){
+              if(arr[i] < arr[j]){
+
+                  bienTam = arr[i];
+                  arr[i] = arr[j];
+                  arr[j] = bienTam;
+              }
+          }
+      }
+      console.log(arr[2])
+  }
+  findPoint(arr)
+</script>
+</body>
+</html>
